@@ -1,0 +1,16 @@
+[user]
+	name = s1n
+	email = jswitzer@gmail.com
+
+[alias]
+    ci = commit -a
+    co = clone
+
+[diff]
+    color = auto
+
+[pager]
+    color = true
+
+[status]
+    color = auto

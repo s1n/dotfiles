@@ -39,8 +39,8 @@ inoremap <Up> <C-o>gk
 "imap <C-d> <C-o>l
 imap <Tab> <C-n>
 
+colorscheme delek
 highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 match OverLength /\%>80v.\+/
-colorscheme delek
 
