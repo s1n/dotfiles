@@ -18,6 +18,7 @@ set filetype=on
 set foldmethod=marker
 set paste
 set ruler
+syntax on
 
 let perl_include_pod=1
 let perl_want_scope_in_variables=1
