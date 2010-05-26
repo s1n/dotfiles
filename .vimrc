@@ -18,6 +18,7 @@ set foldmethod=marker
 set paste
 set ruler
 set ai
+syntax on
 
 function ToggleMatchParen()
     if exists("g:loaded_matchparen")
