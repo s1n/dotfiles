@@ -3,8 +3,9 @@
 	email = jswitzer@gmail.com
 
 [alias]
-    ci = commit -a
+    ci = commit
     co = clone
+    stat = status
 
 [diff]
     color = auto
