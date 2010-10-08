@@ -3,21 +3,23 @@ set ignorecase
 set smartcase
 set incsearch
 set title
+set smartindent
+set autoindent
 set gdefault
 set dictionary+=/usr/share/dict/words
 set modeline
 set numberwidth=6
 set number
 set expandtab
-set shiftwidth=4
-set tabstop=4
+set shiftwidth=3
+set tabstop=3
 set showcmd
 set nobackup
 set filetype=on
 set foldmethod=marker
 set paste
 set ruler
-set ai
+"set digraph
 syntax on
 
 function ToggleMatchParen()
@@ -37,6 +39,7 @@ let perl_string_as_statement=1
 let g:load_doxygen_syntax=1
 let c_space_errors=1
 let loaded_matchparen=0
+let &titleold=getcwd()
 
 inoremap <CapsLock> <Esc>
 command WQ wq
