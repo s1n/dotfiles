@@ -3,6 +3,8 @@ set ignorecase
 set smartcase
 set incsearch
 set title
+set smartindent
+set autoindent
 set gdefault
 set dictionary+=/usr/share/dict/words
 set modeline
@@ -15,12 +17,14 @@ set showcmd
 set nobackup
 set filetype=on
 set foldmethod=marker
-"set paste
 set ruler
 set ai
 set showmatch
 set matchtime=3
 filetype plugin on
+syntax on
+"set paste
+"set digraph
 
 function ToggleMatchParen()
     if exists("g:loaded_matchparen")
