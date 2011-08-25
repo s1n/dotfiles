@@ -3,8 +3,6 @@ set ignorecase
 set smartcase
 set incsearch
 set title
-set smartindent
-set autoindent
 set gdefault
 set dictionary+=/usr/share/dict/words
 set modeline
@@ -17,14 +15,12 @@ set showcmd
 set nobackup
 set filetype=on
 set foldmethod=marker
+"set paste
 set ruler
 set ai
 set showmatch
 set matchtime=3
 filetype plugin on
-syntax on
-"set paste
-"set digraph
 
 function ToggleMatchParen()
     if exists("g:loaded_matchparen")
@@ -106,6 +102,7 @@ autocmd FileType cpp set omnifunc=cppcomplete#Complete
 "taglist settings
 nnoremap <F12> :!ctags -R --c++-kinds=+pl --fields=+iaS --extra=+q .<CR>
 nnoremap <F8> :TlistToggle<CR>
+nnoremap <F9> :NERDTree<CR>
 let Tlist_Auto_Open = 1
 let Tlist_Display_Prototype = 1
 let Tlist_Display_Tag_Scope = 0
@@ -160,8 +157,8 @@ nnoremap <silent> se     :FufEditDataFile<CR>
 nnoremap <silent> sr     :FufRenewCache<CR>
 
 "minibufexpl
-let g:miniBufExplModSelTarget = 1
-map <Leader>b :TMiniBufExplorer<cr>
+"let g:miniBufExplModSelTarget = 1
+"map <Leader>b :TMiniBufExplorer<cr>
 "map <Leader>c :CMiniBufExplorer<cr>
 "map <Leader>u :UMiniBufExplorer<cr>
 "map <Leader>t :TMiniBufExplorer<cr>
